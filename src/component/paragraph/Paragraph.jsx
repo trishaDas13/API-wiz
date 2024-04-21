@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import './para.scss';
 
 const Paragraph = () => {
   const [para, setPara] = useState("");
 
   return (
-    <div className="paragraph">
+    <div className="para">
       <textarea
         cols="30"
         rows="10"

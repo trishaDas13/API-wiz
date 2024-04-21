@@ -1,0 +1,47 @@
+.para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  textarea {
+    width: 1291px;
+    height: 200px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 6px;
+    background-color: rgba(252, 252, 253, 1);
+    border: 1px solid rgba(210, 214, 219, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    resize: none;
+  }
+  table {
+    width: 100%;
+    border: 1px solid rgba(234, 236, 240, 1);
+    text-align: left;
+    border-collapse: collapse;
+    thead {
+      tr {
+        background: rgba(255, 255, 255, 1);
+        th{
+            font-weight: 500;
+            height: 44px;
+            padding: 0 8px;
+            border: 1px solid rgba(234, 236, 240, 1);
+        }
+      }
+    }
+    tbody{
+        tr{
+            font-weight: 500;
+            height: 44px;
+            background-color: rgba(249, 250, 251, 1);
+            td{
+                padding: 0 8px;
+                border: 1px solid rgba(234, 236, 240, 1);
+                // border-collapse: collapse;
+            }
+        }
+    }
+  }
+}

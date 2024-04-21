@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import './word.scss';
 
 const Words = () => {
   const [words, setWords] = useState("");
@@ -41,8 +42,7 @@ const Words = () => {
       <div className="process">
         <textarea
           value={words}
-          cols="30"
-          rows="4"
+          rows={1}
           placeholder="Type a word..."
           onChange={(e) => setWords(e.target.value)}
         ></textarea>
@@ -64,7 +64,9 @@ const Words = () => {
             }
           </p>
         </div>
-        {data && data.meanings && data.meanings.length > 0 && (
+        
+      </div>
+      {data && data.meanings && data.meanings.length > 0 && (
           <div className="word_meaning">
             <div className="info">
               <p>Definition : </p>
@@ -94,7 +96,6 @@ const Words = () => {
             </div>
           </div>
         )}
-      </div>
     </div>
   );
 };

@@ -22,10 +22,16 @@ const Toggle = () => {
         </p>
       </div>
       <div className="toggleBtn">
-        <button onClick={() => toggleComponent("words")}>
+        <button
+          onClick={() => toggleComponent("words")}
+          className={componentType == "words" ? "active" : ""}
+        >
           Word Input
         </button>
-        <button onClick={() => toggleComponent("paragraph")}>
+        <button
+          onClick={() => toggleComponent("paragraph")}
+          className={componentType == "paragraph" ? "active" : ""}
+        >
           Paragraph
         </button>
       </div>
