@@ -12,6 +12,7 @@ const Paragraph = () => {
         placeholder="Type, or copy/paste your content here."
         onChange={(e) => setPara(e.target.value)}
       ></textarea>
+      <div className="tableWrapper">
       <table>
         <thead>
           <tr>
@@ -34,6 +35,7 @@ const Paragraph = () => {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

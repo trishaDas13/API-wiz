@@ -3,7 +3,8 @@
     flex-direction: column;
     gap: 20px;
   textarea {
-    width: 1291px;
+    max-width: 1291px;
+    width: 100%;
     height: 200px;
     padding: 8px 12px 8px 12px;
     border-radius: 6px;
@@ -15,33 +16,38 @@
     text-align: left;
     resize: none;
   }
-  table {
+  .tableWrapper{
     width: 100%;
-    border: 1px solid rgba(234, 236, 240, 1);
-    text-align: left;
-    border-collapse: collapse;
-    thead {
-      tr {
-        background: rgba(255, 255, 255, 1);
-        th{
-            font-weight: 500;
-            height: 44px;
-            padding: 0 8px;
-            border: 1px solid rgba(234, 236, 240, 1);
+    overflow-x: scroll;
+    table {
+      width: 100%;
+      border: 1px solid rgba(234, 236, 240, 1);
+      text-align: left;
+      border-collapse: collapse;
+      thead {
+        tr {
+          background: rgba(255, 255, 255, 1);
+          th{
+              font-weight: 500;
+              height: 44px;
+              padding: 0 8px;
+              border: 1px solid rgba(234, 236, 240, 1);
+          }
         }
       }
-    }
-    tbody{
-        tr{
-            font-weight: 500;
-            height: 44px;
-            background-color: rgba(249, 250, 251, 1);
-            td{
-                padding: 0 8px;
-                border: 1px solid rgba(234, 236, 240, 1);
-                // border-collapse: collapse;
-            }
-        }
+      tbody{
+          tr{
+              font-weight: 500;
+              height: 44px;
+              background-color: rgba(249, 250, 251, 1);
+              td{
+                  padding: 0 8px;
+                  border: 1px solid rgba(234, 236, 240, 1);
+                  // border-collapse: collapse;
+              }
+          }
+      }
     }
   }
+  
 }

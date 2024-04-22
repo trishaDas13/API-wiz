@@ -10,7 +10,14 @@ body{
   overflow: hidden;
   color: rgba(52, 64, 84, 1);
   background-image: linear-gradient(to bottom, #ffffff, #eff6ff);
+  @media (max-width: 375px){
+    overflow: scroll;
+    height: auto;
+   } 
   #root{
     padding: 20px 40px;
+    @media (max-width: 375px){
+     padding: 1rem;
+    } 
   }
 }

@@ -12,12 +12,19 @@
       line-height: 38.09px;
       text-align: left;
       letter-spacing: 1px;
+      @media (max-width: 375px){
+        font-size: 32px;
+      }
     }
     p {
       font-size: 32px;
       font-weight: 400;
       line-height: 38.4px;
       text-align: left;
+      @media (max-width: 375px){
+        font-size: 16px;
+        line-height: 28.4px;
+      }
     }
   }
   .toggleBtn {
@@ -29,6 +36,9 @@
     padding: 4px;
     gap: 4px;
     border-radius: 10px;
+    @media (max-width: 375px){
+      max-width: 640px;
+    }
     button{
         all: unset;
         width: 314px;

@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
     textarea {
       resize: none;
       max-width: 1142px;
@@ -34,6 +35,9 @@
       width: 541px;
       background: rgba(255, 255, 255, 1);
       padding: 12px, 16px, 12px, 16px;
+      @media (max-width: 375px){
+        max-width: 240px;
+      }
       p {
         padding: 10px 16px;
         width: 314px;
@@ -44,6 +48,9 @@
       width: 541px;
       background: rgba(234, 236, 240, 0.4);
       display: flex;
+      @media (max-width: 375px){
+        max-width: 240px;
+      }
       p {
         padding: 10px 16px;
         width: 314px;
@@ -54,7 +61,6 @@
   .word_meaning {
     max-width: 1290px;
     width: 100%;
-    // height: 172px;
     padding: 16px;
     display: flex;
     flex-direction: column;
